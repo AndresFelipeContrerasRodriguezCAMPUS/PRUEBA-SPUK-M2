@@ -1,5 +1,5 @@
 const url = 'http://localhost:3000/api/articulos/'
-//no supe consumir el appi pero el codigo era asi 
+
 const contenedor= document.querySelector('tbody')
 let resultado=''
 

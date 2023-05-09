@@ -26,20 +26,30 @@ section{
     margin: auto;
     border-radius: 20px;
     max-width: calc(100% - 30px);
-    border-radius:25 ;
+    border-radius:25px ;
     position: relative;
     align-self:center ;
     flex-direction: row;
     flex-direction: column;
     font-size: 300px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin-top:300px ;
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+    margin-top:100px ;
     height: 300px;
 }
-
+.hh{
+    max-width: calc(100% - 30px);
+    border-radius:25 ;
+    position: relative;
+    align-self:center ;
+    flex-direction: row;
+    flex-direction: column;
+}
+.re{
+    display: none;
+}
 
 h3{
     color: aquamarine;
@@ -58,5 +68,4 @@ h1{
 .usuario{
     background-color: aquamarine;
 }
-
 
