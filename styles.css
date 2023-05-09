@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+   
+    
+}
+section{
+    position: absolute;
+    align-items: center;
+    background-image:url(img/5509862.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+   
+}
+.div1{
+    background-image: url(img/cielo\ estrellado.jpg);
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    max-width: calc(100% - 30px);
+    border-radius:25 ;
+    position: relative;
+    align-self:center ;
+    flex-direction: row;
+    flex-direction: column;
+    font-size: 300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top:300px ;
+    height: 300px;
+}
+
+
+h3{
+    color: aquamarine;
+    margin-top:40px ;
+    padding-top: 20px;
+    
+}
+h1{
+    color:white;
+    
+}
+.b1{
+    border: 2px solid black;
+    padding-bottom:20px ;
+}
+.usuario{
+    background-color: aquamarine;
+}
+
+
