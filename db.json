@@ -1,9 +1,14 @@
 {
+    "categoria":[
+        {
+        "id": 1,
+        "nombre": "Juan"
+        }
+    ],
     "usuarios":[{
         "id": 1,
         "nombre": "Juan",
         "user": "Perez",
         "password":"contraseña" 
-    }
-]
+    }]
 }
