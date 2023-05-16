@@ -1,0 +1,86 @@
+body{
+    background-image:url(planeta.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+}
+.caja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    max-width: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin: -25px 0 0 -25px; 
+
+}
+.formulario1{
+    display: none;
+}
+input{
+    border:4px solid rgb(15, 226, 233) ;
+}
+
+.a{
+    position: relative;
+    text-decoration: none;
+    color:rgb(87, 85, 196);
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+.i1{
+    padding: 5px;
+    
+}
+.i2{
+    padding: 5px;
+   
+}
+.d1{
+    display: flex ;
+    margin: auto;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.btn1{
+    color: white ;
+    background-color: rgb(248, 248, 248) !important;
+    
+}
+p{
+    display: flex;
+    color: white;
+    font-size: 100%;
+    margin: 7px !important;    
+}
+.divlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(5, 153, 133) ;
+}
+.seccion{
+    background: url(o3h.gif);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    padding: 50px;
+    padding-bottom: 0;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}

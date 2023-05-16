@@ -1,14 +1,46 @@
 {
-    "categoria":[
-        {
-        "id": 1,
-        "nombre": "Juan"
-        }
-    ],
-    "usuarios":[{
-        "id": 1,
-        "nombre": "Juan",
-        "user": "Perez",
-        "password":"contraseña" 
-    }]
+  "users": [
+    {
+      "id": 1,
+      "nombre": "",
+      "usuario": "",
+      "contrasena": "",
+      "email": ""
+    },
+    {
+      "nombre": "andres",
+      "usuario": "CONTRERAS",
+      "contrasena": "112605",
+      "email": "felipecr3456@gmail.com",
+      "id": 2
+    },
+    {
+      "nombre": "CALA",
+      "usuario": "CALA",
+      "contrasena": "12",
+      "email": "BCALA@GMAIL.COM",
+      "id": 3
+    }
+  ],
+  "categorias":[
+    {
+      "id": 1,
+      "nombre": "",
+      "categoria": ""
+    }
+  ],
+  "factura":[
+    {
+      "id": 1,
+      "nombre": "",
+      "categoria": ""
+    }
+  ],
+  "empleados":[
+    {
+      "id": 1,
+      "nombre": "",
+      "categoria": ""
+    }
+  ]
 }

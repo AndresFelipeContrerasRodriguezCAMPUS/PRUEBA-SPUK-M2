@@ -1,43 +1,55 @@
+async function obtenerDatos(form2){
+   
+  let datos =  await fetch(`http://localhost:3000/users?usuario=${form2.usuario}&contrasena=${form2.contraseña}`,{
+      method:'GET',
+      headers:{
+          "Content-Type":"application/json"
+      }
+  })  
+
+  datos = await datos.json();
+
+  return datos;
+  
+}
+
+async function loguear(form2){    
+  const llog={
+      contraseña:form2.contraseña.value,
+      usuario:form2.usuario.value
+  }
+ 
+  let datos = await obtenerDatos(llog);  
+
+   if(datos.length > 0 && form2.contraseña.value.length > 0){
+       
+       
+       window.location.href='/section2/index.html'
+  }else if(form2.contraseña.value.length == 0 && form2.usuario.value.length == 0 ){
+    alert("digite el usuario y la contraseña")
+  }else if(form2.contraseña.value.length == 0 ){
+    alert("digite la contraseña")
+  }else if(form2.usuario.value.length == 0 ){
+    alert("digite el usuario")
+  }else{
+    alert("usuario o contraseña incorrectos")
+  }
+
+   
+}
 
 
-const logi=document.getElementById('registrar')
-const bodyy=document.querySelector('div1')
+let form2= document.querySelector("#hhh")
+
+form2.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const form2= e.target;    
+  loguear(form2)
+  obtenerDatos(form2)
+})
 
 
-registrar.addEventListener('click',()=>{
-        bodyy+= `<div class="card text-center gg">
-        <div class="card-header">
-            <button type="button" class="btn btn-warning b1 " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                login
-            </button>
-            <div class="modal fade" id="exampleModal" id="m1"tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header usuario bg-warning">
-                      <h5 class="modal-title" id="exampleModalLabel">Registro de nueva categoria</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      <form>
-                    </div>
-                                <div class="m-3 position-relative">
-                                    <b>usuario</b>
-                                    <input type="text" class="form-control usuario" data-bs-toggle="modal" data-bs-target="#exampleModal" id="nombre">
-                                </div>
-                                <div class="m-3 position-relative">
-                                    <b>contraseña</b>
-                                    <input type="text" class="form-control password2" data-bs-toggle="modal" data-bs-target="#exampleModal" id="nombre">
-                                </div>
-        
-                    </div>
-                    </form>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-warning re" id="registrar">entrar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>`
-    });
+
     
 
     

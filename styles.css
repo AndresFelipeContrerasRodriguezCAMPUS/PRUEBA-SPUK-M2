@@ -1,71 +1,86 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body{
+    background-image:url(space.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 100%;
-   
-    
 }
-section{
-    position: absolute;
+.caja{
+    display: flex;
     align-items: center;
-    background-image:url(img/5509862.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    justify-content: center;
+    align-self: center;
+    max-width: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin: -25px 0 0 -25px; 
 
-   
 }
-.div1{
-    background-image: url(img/cielo\ estrellado.jpg);
-    width: 400px;
-    margin: auto;
-    border-radius: 20px;
-    max-width: calc(100% - 30px);
-    border-radius:25px ;
-    position: relative;
-    align-self:center ;
-    flex-direction: row;
-    flex-direction: column;
-    font-size: 300px;
-    -webkit-border-radius:25px ;
-    -moz-border-radius:25px ;
-    -ms-border-radius:25px ;
-    -o-border-radius:25px ;
-    margin-top:100px ;
-    height: 300px;
-}
-.hh{
-    max-width: calc(100% - 30px);
-    border-radius:25 ;
-    position: relative;
-    align-self:center ;
-    flex-direction: row;
-    flex-direction: column;
-}
-.re{
+.formulario1{
     display: none;
 }
-
-h3{
-    color: aquamarine;
-    margin-top:40px ;
-    padding-top: 20px;
-    
-}
-h1{
-    color:white;
-    
-}
-.b1{
-    border: 2px solid black;
-    padding-bottom:20px ;
-}
-.usuario{
-    background-color: aquamarine;
+input{
+    border:4px solid mediumpurple ;
 }
 
+.a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(5, 153, 133);
+    display: flex;
+    justify-content: end;
+    right: 10%;
+    margin: 10px;
+
+}
+.i1{
+    padding: 5px;
+    
+}
+.i2{
+    padding: 5px;
+   
+}
+.d1{
+    display: flex ;
+    margin: auto;
+    justify-content: center;
+
+}
+.btn1{
+    color: white ;
+    background-color: blueviolet !important;
+    
+}
+p{
+    display: flex;
+    color: white;
+    font-size: 100%;
+    margin: 7px !important;    
+}
+.divlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet ;
+}
+.seccion{
+    background:url(IrF.gif);
+    background-repeat:no-repeat;
+    padding: 50px;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
